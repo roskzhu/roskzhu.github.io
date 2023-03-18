@@ -23,6 +23,11 @@ import cropicon from "./icon1.png";
 import transicon from "./icon3.png";
 import perlin from "./perlin.gif";
 import terrain from "./terrain2.gif";
+import fridges from "./FridgeS.png";
+import cxc from "./jupyter.png";
+import sort from "./sort-crop.png";
+import sudoku from "./sudoku.png";
+import portfolio from "./portfolio.png";
 
 export {
   ai,
@@ -50,4 +55,9 @@ export {
   transicon,
   perlin,
   terrain,
+  fridges,
+  cxc,
+  sort,
+  sudoku,
+  portfolio
 };

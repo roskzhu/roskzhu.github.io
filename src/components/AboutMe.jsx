@@ -39,23 +39,25 @@ const AboutMe = () => (
       <h2 className={styles.heading2}>
         About Me
       </h2>
-      <p className={`${styles.paragraph} max-w-[655px] mt-5`}>
+      <p className={`${styles.paragraph} ml-8 max-w-[655px] mt-5`}>
         Hi! I'm a computer science student at the University of Waterloo. I have great interest in full-stack development, machine learning, and cryptography.
       </p>  
-      <p className={`${styles.paragraph} max-w-[655px] mt-5`}>
+      <p className={`${styles.paragraph} ml-8 max-w-[655px] mt-5`}>
         Outside of work, I'm interested in following the developments of science. I also do some art and I listen to a lot of music.
       </p>  
-      <p className={`${styles.paragraph} max-w-[655px] mt-5`}>
+      <p className={`${styles.paragraph} ml-8 max-w-[655px] mt-5`}>
         I’d love to get to know you! Feel free to drop a message and let’s chat. 
 
       {/*Don't hesitate to reach out to me for my resume. */}
       </p> 
       <br className="sm:block hidden" /> {" "}
-      <a href="mailto:rkzhu@uwaterloo.ca">
-        <button>
-          <SayHi styles={`mt-10`} />
-        </button>
-      </a>
+      <div className="ml-8">
+        <a href="mailto:rkzhu@uwaterloo.ca">
+          <button>
+            <SayHi styles={`mt-10`} />
+          </button>
+        </a>
+      </div>
     </div>
 
 

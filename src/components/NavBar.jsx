@@ -11,12 +11,18 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-center items-center navbar">    
       {/* upper left icon */}
       {/* <img src={icon} alt="icon" className="w-[80px] h-[80px]" /> */}
-
-      <ul className="list-none sm:flex hidden justify-center items-center flex-1 ">
+      {/* <h1 className="flex-1 absolute font-universo font-semibold ss:text-[12px] text-[10px] text-white ss:leading-[10px] leading-[14px] z-[5]"> */}
+        {/* the line below adds a new line */}
+        {/* <br className="sm:block hidden" /> {" "} */}
+        {/* <span className="text-gradient" id="gradient-header1">
+          RZ
+        </span>
+      </h1> */}
+      <ul className="list-none sm:flex hidden justify-center items-center flex-1 mt-5">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-latinka font-normal cursor-pointer text-[15px] 
+            className={`font-latinka font-normal cursor-pointer text-[18px] 
             ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } 

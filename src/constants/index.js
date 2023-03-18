@@ -1,4 +1,4 @@
-import { icon, linkedin, github, transicon, ispy  } from "../assets";
+import { icon, linkedin, github, transicon, ispy, fridges, cxc, sudoku, portfolio, sort  } from "../assets";
 
 export const navLinks = [
   {
@@ -27,20 +27,6 @@ export const about = [
     content:
       "Rosanne drew, designed, and animated me herself. Nice to meet you!",
   },
-  // {
-  //   id: "about-2",
-  //   icon: shield,
-  //   title: "Club/Activity",
-  //   content:
-  //     "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  // },
-  // {
-  //   id: "about-3",
-  //   icon: send,
-  //   title: "Club/Activity",
-  //   content:
-  //     "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  // },
 ];
 
 export const project = [
@@ -58,7 +44,7 @@ export const project = [
       "A full-stack web application recipe making AI where the user takes a picture of their open fridge and uploads it to the website. The machine learning AI then automatically detects what items are in the fridge and outputs them onto an ingredient list. Using this data, another AI produces all possible recipes that can be made with the ingredients.",
     name: "Fridge Smart",
     // title: "Languages and Tools",
-    img: icon,
+    img: fridges,
   },
   {
     id: "project-3",
@@ -66,7 +52,7 @@ export const project = [
       "Given a large set of CSV medical documents, I used NLTK libraries to tokenize and stem and train large data sets. Scripts were written in Python to automatically scrape and update medical documents, classifying medical transcripts to specialties, using Pandas and NumPy libraries.",
     name: "CxC Data Science Challenge",
     // title: "Languages and Tools",
-    img: icon,
+    img: cxc,
   },
   {
     id: "project-4",
@@ -74,7 +60,7 @@ export const project = [
       "A web application built using React.js that visualizes and compares different sorting algorithms, such as insertion sort, merge sort, bubble sort, and quick sort. ",
     name: "Sorting Algorithm Visualizer",
     // title: "Languages and Tools",
-    img: icon,
+    img: sort,
   },
   {
     id: "project-5",
@@ -82,7 +68,7 @@ export const project = [
       "A sudoku solver engine that solves a sudoku board using recursion and backtracking algorithms, coded in Python.",
     name: "Sudoku Solver",
     // title: "Languages and Tools",
-    img: icon,
+    img: sudoku,
   },
   {
     id: "project-6",
@@ -90,7 +76,7 @@ export const project = [
       "This is my website! Check out the source code here. Built using React.js.",
     name: "Personal Portfolio",
     // title: "Languages and Tools",
-    img: icon,
+    img: portfolio,
   },
 ];
 
