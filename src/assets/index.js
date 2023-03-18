@@ -1,63 +1,53 @@
-import airbnb from "./airbnb.png";
-import bill from "./bill.png";
-import binance from "./binance.png";
-import card from "./card.png";
-import coinbase from "./coinbase.png";
-import dropbox from "./dropbox.png";
+import ai from "./ai.png";
+import herobg from "./herobg.png";
 import logo from "./logo.svg";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
-import star from "./Star.svg";
+import ispy from "./iSpy.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
 import apple from "./apple.svg";
 import arrow from "./arrow.png";
 import discount from "./Discount.svg";
-import facebook from "./facebook.svg";
-import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
-import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.png";
 import donut from "./spinning_donut.gif";
 import mylogo from "./spinning_diamond.gif";
 import email from "./email-sent.png";
 import github from "./github.png";
-
-
+import icon from "./icon.webp";
+import triplearrow from "./triple-arrow.png";
+import cropicon from "./icon1.png";
+import transicon from "./icon3.png";
+import perlin from "./perlin.gif";
+import terrain from "./terrain2.gif";
 
 export {
-  airbnb,
-  bill,
-  binance,
-  card,
-  coinbase,
-  dropbox,
+  ai,
+  herobg,
   logo,
   quotes,
   robot,
   send,
   shield,
-  star,
+  ispy,
   menu,
   close,
   google,
   apple,
   arrow,
   discount,
-  facebook,
-  instagram,
   linkedin,
-  twitter,
-  people01,
-  people02,
-  people03,
   donut,
   mylogo,
   email,
   github,
+  icon,
+  triplearrow,
+  cropicon,
+  transicon,
+  perlin,
+  terrain,
 };

@@ -1,197 +1,127 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { icon, linkedin, github, transicon, ispy  } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "HOME",
   },
-  {
-    id: "about",
-    title: "About",
-  },
-  // {
-  //   id: "product",
-  //   title: "Product",
-  // },
   {
     id: "projects",
-    title: "Projects",
+    title: "PROJECTS",
+  },
+    {
+    id: "about",
+    title: "ABOUT",
+  },
+  {
+    id: "contact",
+    title: "CONTACT",
   },
 ];
 
 export const about = [
   {
     id: "about-1",
-    icon: star,
-    title: "Club/Activity",
+    icon: icon,
+    title: "I’m Bubly!",
     content:
-      "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "Rosanne drew, designed, and animated me herself. Nice to meet you!",
   },
-  {
-    id: "about-2",
-    icon: shield,
-    title: "Club/Activity",
-    content:
-      "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  },
-  {
-    id: "about-3",
-    icon: send,
-    title: "Club/Activity",
-    content:
-      "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  },
+  // {
+  //   id: "about-2",
+  //   icon: shield,
+  //   title: "Club/Activity",
+  //   content:
+  //     "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  // },
+  // {
+  //   id: "about-3",
+  //   icon: send,
+  //   title: "Club/Activity",
+  //   content:
+  //     "Description here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  // },
 ];
 
 export const project = [
   {
     id: "project-1",
+    name: "iSpy",
     content:
-      "Project description xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    name: "Project Name",
-    title: "Languages and Tools",
-    img: people01,
+      "A web application that recognizes faces with a live camera feed with up to a 95% accuracy rate. Written with Python using OpenCV, and Tensorflow libraries. Frontend is made with vanilla Javascript and HTML/CSS. ",
+    // title: "Languages and Tools",
+    img: ispy,
   },
   {
     id: "project-2",
     content:
-      "Project description xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    name: "Project Name",
-    title: "Languages and Tools",
-    img: people02,
+      "A full-stack web application recipe making AI where the user takes a picture of their open fridge and uploads it to the website. The machine learning AI then automatically detects what items are in the fridge and outputs them onto an ingredient list. Using this data, another AI produces all possible recipes that can be made with the ingredients.",
+    name: "Fridge Smart",
+    // title: "Languages and Tools",
+    img: icon,
   },
   {
     id: "project-3",
     content:
-      "Project description xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    name: "Project Name",
-    title: "Languages and Tools",
-    img: people03,
-  },
-];
-
-export const stats = [
-  {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+      "Given a large set of CSV medical documents, I used NLTK libraries to tokenize and stem and train large data sets. Scripts were written in Python to automatically scrape and update medical documents, classifying medical transcripts to specialties, using Pandas and NumPy libraries.",
+    name: "CxC Data Science Challenge",
+    // title: "Languages and Tools",
+    img: icon,
   },
   {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    id: "project-4",
+    content:
+      "A web application built using React.js that visualizes and compares different sorting algorithms, such as insertion sort, merge sort, bubble sort, and quick sort. ",
+    name: "Sorting Algorithm Visualizer",
+    // title: "Languages and Tools",
+    img: icon,
   },
   {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
-];
-
-export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
+    id: "project-5",
+    content:
+      "A sudoku solver engine that solves a sudoku board using recursion and backtracking algorithms, coded in Python.",
+    name: "Sudoku Solver",
+    // title: "Languages and Tools",
+    img: icon,
   },
   {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
+    id: "project-6",
+    content:
+      "This is my website! Check out the source code here. Built using React.js.",
+    name: "Personal Portfolio",
+    // title: "Languages and Tools",
+    img: icon,
   },
 ];
 
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
+    icon: github,
+    link: "https://github.com/roskzhu",
   },
   {
     id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/rosanne-zhu/",
   },
 ];
 
 export const projects = [
   {
     id: "client-1",
-    mylogo: airbnb,
+    mylogo: transicon,
   },
   {
     id: "client-2",
-    mylogo: binance,
+    mylogo: transicon,
   },
   {
     id: "client-3",
-    mylogo: coinbase,
+    mylogo: transicon,
   },
   {
     id: "client-4",
-    mylogo: dropbox,
+    mylogo: transicon,
   },
 ];

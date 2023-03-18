@@ -4,14 +4,25 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: 
+      // "url('../assets/herobg.jpg')"
+      {
+        'herobg': "url('./assets/herobg1.png')",
+      }
+      ,
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        // perlin: 
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        universo: ["universo", "sans-serif"],
+        latinka: ["latinka", "sans-serif"],
+        pixeloid: ["pixeloid", "sans-serif"],
+        pixeloidBold: ["pixeloidBold", "bold"],
       },
     },
     screens: {
@@ -23,5 +34,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

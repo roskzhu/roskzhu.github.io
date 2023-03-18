@@ -6,9 +6,9 @@ const SayHi = () => (
         <div className={`${styles.flexCenter} flex-col bg-primary w-[100%] h-[100%] rounded-full`}>
             <div className={`${styles.flexStart} flex-row`}>
                 <p className="font-poppins font-medium text-[18px] leading-[23px] mr-1">
-                    <span className="text-gradient">Say hi!</span>
+                    <span className="small-text-gradient">Say hi!</span>
                 </p>
-                <img src={email} alt="email" className="w-[25px] h-[25px] object-contain ml-2"/>
+                <img src={email} alt="email" className="w-[20px] h-[20px] object-contain ml-2"/>
             </div>
         </div>
     </div>
