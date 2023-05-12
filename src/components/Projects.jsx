@@ -3,7 +3,7 @@ import styles, { layout } from "../style";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => (
-  <section id="projects" className={`${styles.paddingY} ${styles.flexStart} ml-8 flex-col relative`}>
+  <section id="projects" className={`${styles.paddingY} ${styles.flexStart} flex-col relative`}>
     
     {/* gradient hover */}
     {/* <div className="absolute z-[0] w-[40%] h-[40%] -right-1/2 rounded-full purple__gradient bottom-40" /> */}
@@ -25,7 +25,7 @@ const Projects = () => (
       <br className="sm:block hidden" /> {" "}
     </div>
 
-    <div className="flex flex-wrap sm:justify-start justify-center w-full project-container relative z-[1]">
+    <div className="flex flex-wrap sm:justify-start justify-items-center w-full project-container relative z-[1]">
       {project.map((card) => <ProjectCard key={card.id} {...card} />)}
     </div>
   </section>
