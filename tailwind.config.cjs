@@ -4,12 +4,12 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
-      backgroundImage: 
-      // "url('../assets/herobg.jpg')"
-      {
-        'herobg': "url('./assets/herobg1.png')",
-      }
-      ,
+      // backgroundImage: 
+      // // "url('../assets/herobg.jpg')"
+      // {
+      //   'herobg': "url('./assets/herobg1.png')",
+      // }
+      // ,
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
