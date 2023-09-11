@@ -14,6 +14,7 @@ import arrow from "./arrow.png";
 import discount from "./Discount.svg";
 import linkedin from "./linkedin.svg";
 import donut from "./spinning_donut.gif";
+import donuticon from "./donut.png";
 import mylogo from "./spinning_diamond.gif";
 import email from "./email-sent.png";
 import github from "./github.png";
@@ -46,6 +47,7 @@ export {
   discount,
   linkedin,
   donut,
+  donuticon,
   mylogo,
   email,
   github,

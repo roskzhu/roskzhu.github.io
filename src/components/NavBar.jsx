@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { close, mylogo, logo, menu, icon } from "../assets";
+import { close, donuticon, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -8,21 +8,19 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-center items-center navbar">    
+    <nav className="w-full flex py-6 justify-end items-center navbar">    
       {/* upper left icon */}
-      {/* <img src={icon} alt="icon" className="w-[80px] h-[80px]" /> */}
-      {/* <h1 className="flex-1 absolute font-universo font-semibold ss:text-[12px] text-[10px] text-white ss:leading-[10px] leading-[14px] z-[5]"> */}
-        {/* the line below adds a new line */}
-        {/* <br className="sm:block hidden" /> {" "} */}
-        {/* <span className="text-gradient" id="gradient-header1">
+      <img src={donuticon} alt="icon" className="w-[80px] h-[80px] rounded-2xl" />
+      {/* <h1 className="flex-1 absolute font-poppins font-semibold ss:text-[30px] text-[24px] 
+        text-white ss:leading-[24px] leading-[24px] z-[5] left-0"
+        style={{ left: '98px', top: '39px' }}>
           RZ
-        </span>
       </h1> */}
-      <ul className="list-none sm:flex hidden justify-center items-center flex-1 mt-5">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1 mt-5">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-latinka font-normal cursor-pointer text-[18px] 
+            className={`font-poppins font-normal cursor-pointer text-[25px] 
             ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } 

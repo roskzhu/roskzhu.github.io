@@ -1,4 +1,4 @@
-import { icon, linkedin, github, transicon, ispy, fridges, cxc, sudoku, portfolio, sort  } from "../assets";
+import { icon, linkedin, github, transicon, ispy, fridges, cxc, donuticon  } from "../assets";
 
 export const navLinks = [
   {
@@ -13,10 +13,10 @@ export const navLinks = [
     id: "about",
     title: "ABOUT",
   },
-  {
-    id: "contact",
-    title: "CONTACT",
-  },
+  // {
+  //   id: "contact",
+  //   title: "CONTACT",
+  // },
 ];
 
 export const about = [
@@ -34,50 +34,50 @@ export const project = [
     id: "project-1",
     name: "iSpy",
     content:
-      "A web application that recognizes faces with a live camera feed with up to a 95% accuracy rate. Written with Python using OpenCV, and Tensorflow libraries. Frontend is made with vanilla Javascript and HTML/CSS. ",
+      "Facial recognition web application.",
     // title: "Languages and Tools",
     img: ispy,
   },
   {
-    id: "project-2",
-    content:
-      "A full-stack web application recipe making AI where the user takes a picture of their open fridge and uploads it to the website. The machine learning AI then automatically detects what items are in the fridge and outputs them onto an ingredient list. Using this data, another AI produces all possible recipes that can be made with the ingredients.",
-    name: "Fridge Smart",
-    // title: "Languages and Tools",
-    img: fridges,
-  },
-  {
     id: "project-3",
     content:
-      "Given a large set of CSV medical documents, I used NLTK libraries to tokenize and stem and train large data sets. Scripts were written in Python to automatically scrape and update medical documents, classifying medical transcripts to specialties, using Pandas and NumPy libraries.",
-    name: "CxC Data Science Challenge",
+      "Tetris variation, expanded for 2-player competition.",
+    name: "Tetris",
     // title: "Languages and Tools",
     img: cxc,
   },
   {
-    id: "project-4",
+    id: "project-2",
     content:
-      "A web application built using React.js that visualizes and compares different sorting algorithms, such as insertion sort, merge sort, bubble sort, and quick sort. ",
-    name: "Sorting Algorithm Visualizer",
+      "Facial recognition web application.",
+    name: "Fridge Smart",
     // title: "Languages and Tools",
-    img: sort,
+    img: fridges,
   },
-  {
-    id: "project-5",
-    content:
-      "A sudoku solver engine that solves a sudoku board using recursion and backtracking algorithms, coded in Python.",
-    name: "Sudoku Solver",
-    // title: "Languages and Tools",
-    img: sudoku,
-  },
-  {
-    id: "project-6",
-    content:
-      "This is my website! Check out the source code here. Built using React.js.",
-    name: "Personal Portfolio",
-    // title: "Languages and Tools",
-    img: portfolio,
-  },
+  // {
+  //   id: "project-4",
+  //   content:
+  //     "A web application built using React.js that visualizes and compares different sorting algorithms, such as insertion sort, merge sort, bubble sort, and quick sort. ",
+  //   name: "Sorting Algorithm Visualizer",
+  //   // title: "Languages and Tools",
+  //   img: sort,
+  // },
+  // {
+  //   id: "project-5",
+  //   content:
+  //     "A sudoku solver engine that solves a sudoku board using recursion and backtracking algorithms, coded in Python.",
+  //   name: "Sudoku Solver",
+  //   // title: "Languages and Tools",
+  //   img: sudoku,
+  // },
+  // {
+  //   id: "project-6",
+  //   content:
+  //     "This is my website! Check out the source code here. Built using React.js.",
+  //   name: "Personal Portfolio",
+  //   // title: "Languages and Tools",
+  //   img: portfolio,
+  // },
 ];
 
 export const socialMedia = [
@@ -96,18 +96,18 @@ export const socialMedia = [
 export const projects = [
   {
     id: "client-1",
-    mylogo: transicon,
+    donuticon: transicon,
   },
   {
     id: "client-2",
-    mylogo: transicon,
+    donuticon: transicon,
   },
   {
     id: "client-3",
-    mylogo: transicon,
+    donuticon: transicon,
   },
   {
     id: "client-4",
-    mylogo: transicon,
+    donuticon: transicon,
   },
 ];

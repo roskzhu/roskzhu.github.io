@@ -10,6 +10,10 @@ module.exports = {
       //   'herobg': "url('./assets/herobg1.png')",
       // }
       // ,
+      animation: {
+        'spin-slow': 'spin 7s linear infinite',
+        'pulse-slow': 'pulse 10s linear infinite',
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",

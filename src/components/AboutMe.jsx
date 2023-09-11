@@ -2,7 +2,7 @@ import { about } from '../constants';
 import styles, { layout } from '../style';
 import Button from './Button';
 import SayHi from './SayHi';
-import { donut, robot, linkedin, github, email } from '../assets';
+import { donut, linkedin, github, email } from '../assets';
 
 {/* Bubly here! */}
 const AboutCard = ({ icon, title, content, index }) => (
@@ -22,8 +22,6 @@ const AboutCard = ({ icon, title, content, index }) => (
     </div>
   </div>
 );
-
-
 
 const AboutMe = () => (
   <section id="about" className={layout.section}>
