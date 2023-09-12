@@ -36,7 +36,6 @@ const Hero = () => (
         </p>
       </Fade>
 
-      {/* <Fade clear delay={1500}> */}
       <p className={`${styles.bigText} text-left mt-5 z-[4] w-full`}
           style={{ paddingBottom: '200px'}}>
           <Typewriter 
@@ -52,56 +51,21 @@ const Hero = () => (
                 .start();
             }}
           />
-          {/* <Typewriter
-            options={{
-              strings: ['Scroll down to see some of my work.'],
-              delay: 200,
-              // startDelay: 10000,
-              autoStart: true,
-              // speed: 10200,
-            }}
-          /> */}
       </p>
-      {/* </Fade> */}
-
-      {/* linkedin and github */}
-      <div className="ss:flex hidden md:mr-4 mr-0">
-          {/* <a href="https://www.linkedin.com/in/rosanne-zhu-17bbaa1b5/">
-            <button>
-              <img src={linkedin} alt="linkedin" className="w-[30px] h-[30px] object-contain ml-2"/>
-            </button>
-          </a>
-          <a href="https://github.com/me50/roskzhu">
-            <button>
-              <img src={github} alt="github" className="w-[30px] h-[30px] object-contain ml-6"/>
-            </button>
-          </a> */}
-          {/* <a href="mailto:rkzhu@uwaterloo.ca">
-            <button>
-              <img src={email} alt="email" className="w-[30px] h-[30px] object-contain ml-6"/>
-            </button>
-          </a> */}
-        </div>
-      {/* </div> */}
 
     {/* images on right side of the page */}
     <div className={`flex-initial flex relative md:my-0 my-10 z-[1] w-full xl:w-1/2 xl:absolute right-20`}>
       <div style={{ width: '80%', height: '100%', position: 'relative',  marginLeft: 'auto' }}>
-        <img
-          src={donut}
-          alt="Donut Image"
-          class="float-right"
-          // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
-        />
+        <Fade clear delay={500}>
+          <img
+            src={donut}
+            alt="Donut Image"
+            class="float-right"
+          />
+          </Fade>
         </div>
-        {/* gradient start */}
-        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
-        {/* gradient end */}
       </div>
     </div>
-
 
       {/* say hi button for mobile devices */}
       <div className={`ss:hidden ${styles.flexCenter}`}>

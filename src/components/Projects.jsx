@@ -16,7 +16,7 @@ const Projects = () => (
         {/* <div className="absolute z-[0] w-[60%] h-[60%] -left-1/2 bottom-0 rounded-full blue__gradient" /> */}
         {/* gradient end */}
     
-    <div className={layout.sectionInfo}>
+    {/* <div className={layout.sectionInfo}>
       <h2 className={styles.heading2} style={{ paddingBottom: '80px'}}>
         Projects
       </h2>
@@ -40,10 +40,10 @@ const Projects = () => (
         <div className="absolute z-[0] w-[384px] h-[81px] rounded-full white__gradient" 
               style={{ position: 'absolute', left: '64px', top: '120px' }}/>
       </div>
-    </div>
+    </div> */}
 
 
-    <div className="text-right" style={{ textAlign: 'right' }}> 
+    {/* <div className="text-right" style={{ textAlign: 'right' }}> 
       <p className={`${styles.heading1} text-right mt-5 z-[5]`}
             style={{ paddingRight: '100px', paddingBottom: '120px'}}>
         Tetris
@@ -71,11 +71,11 @@ const Projects = () => (
             style={{ paddingLeft: '80px', paddingBottom: '100px'}}>
         Javascript
       </p>
-    </div>
-
-    {/* <div className="flex flex-wrap sm:justify-start justify-items-center w-full project-container relative z-[1]">
-      {project.map((card) => <ProjectCard key={card.id} {...card} />)}
     </div> */}
+
+    <div className="flex flex-wrap sm:justify-start justify-items-center w-full project-container relative z-[1]">
+      {project.map((card) => <ProjectCard key={card.id} {...card} />)}
+    </div>
   </section>
 );
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { close, donuticon, menu } from "../assets";
+import { close, logoR, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -10,12 +10,12 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-end items-center navbar">    
       {/* upper left icon */}
-      <img src={donuticon} alt="icon" className="w-[80px] h-[80px] rounded-2xl" />
-      {/* <h1 className="flex-1 absolute font-poppins font-semibold ss:text-[30px] text-[24px] 
-        text-white ss:leading-[24px] leading-[24px] z-[5] left-0"
+      {/* <img src={logoR} alt="icon" className="w-[80px] h-[80px] rounded-3xl" /> */}
+      <h1 className="flex-1 highlight absolute font-poppins font-semibold ss:text-[50px] text-[24px]  
+        text-white ss:leading-[50px] leading-[50px] z-[5] left-0 rounded-2xl"
         style={{ left: '98px', top: '39px' }}>
-          RZ
-      </h1> */}
+          .{' '} R {' '}.
+      </h1>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mt-5">
         {navLinks.map((nav, index) => (
           <li
