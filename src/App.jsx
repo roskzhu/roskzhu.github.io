@@ -4,6 +4,7 @@ import { Navbar, Button, Footer, Projects, Hero } from './components';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 import Loader from "react-spinners/DotLoader";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

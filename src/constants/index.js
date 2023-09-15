@@ -1,4 +1,5 @@
 import { icon, linkedin, github, transicon, ispy, fridges, tetris, } from "../assets";
+import { BrowserRouter } from "react-router-dom";
 
 export const navLinks = [
   {

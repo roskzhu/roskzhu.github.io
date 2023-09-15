@@ -2,6 +2,7 @@ import { useState } from "react";
 import Fade from 'react-reveal/Fade';
 import { close, logoR, menu } from "../assets";
 import { navLinks } from "../constants";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -11,7 +12,7 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-end items-center navbar">    
       {/* upper left icon */}
       {/* <img src={logoR} alt="icon" className="w-[80px] h-[80px] rounded-3xl" /> */}
-      <div className="flex items-center ml-25">
+      {/* <div className="flex items-center ml-25"> */}
         <Fade>
       <h1 className="flex-1 stroke absolute font-poppins font-semibold ss:text-[38px] text-[24px]  
         text-dimWhite ss:leading-[50px] leading-[150px] z-[5] left-20 rounded-2xl mt-5"
@@ -32,16 +33,14 @@ const Navbar = () => {
             `}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}
-            className="nav-link-hover"
-            >
+            <a href={`#${nav.id}`}>
               {nav.title}
             </a>
           </li>
         ))}
       </ul>
       </Fade>
-      </div>
+      {/* </div> */}
       {/* mobile devices */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
