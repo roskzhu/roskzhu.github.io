@@ -21,7 +21,8 @@ const Hero = () => (
       </div>
 
       <Fade clear delay={500}>
-        <h1 className={`${styles.cover} text-white ss:leading-[100px] leading-[74px] w-full text-white text-left mt-5 z-[4]`}
+        <h1 className={`${styles.cover} text-white ss:leading-[100px] 
+        leading-[74px] w-full text-white text-left mt-5 z-[4] left-20`}
         style={{ paddingTop: '100px'}}>
           Hi, I'm {' '}
           <span className="highlight text rounded-3xl">
@@ -32,9 +33,13 @@ const Hero = () => (
       </Fade>
 
       <Fade clear delay={1500}>
-        <p className={`${styles.heading2} text-left mt-5 z-[4] text`}
+        <p className={`${styles.heading2} text-left mt-5 z-[4] text left-20`}
             style={{ paddingBottom: '30px'}}>            
-              I'm a software engineer <br/> developing innovative <br/> solutions for complex <br/> problems.      
+              I'm a {' '}
+              <span className="stroke">
+              software engineer 
+              </span>
+              <br/> developing innovative <br/> solutions for complex <br/> problems.      
         </p>
       </Fade>
 

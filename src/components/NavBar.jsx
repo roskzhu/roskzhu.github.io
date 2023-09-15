@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Fade from 'react-reveal/Fade';
 import { close, logoR, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -11,11 +11,15 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-end items-center navbar">    
       {/* upper left icon */}
       {/* <img src={logoR} alt="icon" className="w-[80px] h-[80px] rounded-3xl" /> */}
-      <h1 className="flex-1 highlight absolute font-poppins font-semibold ss:text-[50px] text-[24px]  
-        text-white ss:leading-[50px] leading-[50px] z-[5] left-0 rounded-2xl"
-        style={{ left: '98px', top: '39px', paddingLeft: '5px', paddingRight: '5px'}}>
-          R
+      <div className="flex items-center ml-25">
+        <Fade>
+      <h1 className="flex-1 stroke absolute font-poppins font-semibold ss:text-[38px] text-[24px]  
+        text-dimWhite ss:leading-[50px] leading-[150px] z-[5] left-20 rounded-2xl mt-5"
+        >
+          Rosanne.
       </h1>
+      </Fade>
+      <Fade>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mt-5">
         {navLinks.map((nav, index) => (
           <li
@@ -28,11 +32,16 @@ const Navbar = () => {
             `}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`#${nav.id}`}
+            className="nav-link-hover"
+            >
+              {nav.title}
+            </a>
           </li>
         ))}
       </ul>
-
+      </Fade>
+      </div>
       {/* mobile devices */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img

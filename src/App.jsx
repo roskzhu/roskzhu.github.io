@@ -39,10 +39,9 @@ const App = () => {
       <>
     <div className="bg-cover bg-herobg w-full overflow-hidden noise">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          {/* fix** */}
+        {/* <div className={`${styles.boxWidth}`}> */}
           <Navbar style={{zIndex: 2}}/>
-        </div>
+        {/* </div> */}
       </div>
       <div className={`${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
@@ -50,7 +49,7 @@ const App = () => {
 </div>
       </div>
     </div>
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
+      <div className={`id="projects" bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
         <div className={`${styles.boxWidth}`}>
           <Projects />
           {/* <AboutMe /> */}

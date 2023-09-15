@@ -12,16 +12,16 @@ const Footer = () =>  (
       </h2>
     </div>
 
-    {/* <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]"> */}
-      {/* <div className="flex-col">
+    {/* <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+      <div className="flex-col">
         <p className="font-poppins font-normal text-left text-[24px] leading-[27px] mt-5 text-white">
           Rosanne Zhu
         </p>
         <p className="font-poppins font-normal text-left text-[18px] leading-[27px] mt-2 text-dimWhite">
           <a href="rosannezhu@gmail.com">rosannezhu@gmail.com</a>          
         </p>
-      </div> */}
-    {/* </div> */}
+      </div>
+    </div> */}
     <div className={`${styles.flexRight} flex items-end flex-row md:mt-0 mt-6`}>
         {socialMedia.map((social, index) => (
           <img
