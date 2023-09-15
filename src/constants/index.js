@@ -1,4 +1,4 @@
-import { icon, linkedin, github, transicon, ispy, fridges, cxc, donuticon  } from "../assets";
+import { icon, linkedin, github, transicon, ispy, fridges, tetris, } from "../assets";
 
 export const navLinks = [
   {
@@ -7,12 +7,12 @@ export const navLinks = [
   },
   {
     id: "projects",
-    title: "PROJECTS",
+    title: "MY WORK",
   },
-    {
-    id: "about",
-    title: "ABOUT",
-  },
+  //   {
+  //   id: "about",
+  //   title: "ABOUT",
+  // },
   // {
   //   id: "contact",
   //   title: "CONTACT",
@@ -35,7 +35,7 @@ export const project = [
     name: "iSpy",
     content:
       "Facial recognition web application.",
-    // title: "Languages and Tools",
+    title: "Python // OpenCV // Tensorflow // Javascript",
     img: ispy,
   },
   {
@@ -43,41 +43,17 @@ export const project = [
     content:
       "Tetris variation, expanded for 2-player competition.",
     name: "Tetris",
-    // title: "Languages and Tools",
-    img: cxc,
+    title: "C++",
+    img: tetris,
   },
   {
     id: "project-2",
     content:
-      "Facial recognition web application.",
+      "Full-stack recipe making AI.",
     name: "Fridge Smart",
-    // title: "Languages and Tools",
+    title: "Javascript // YOLOv8",
     img: fridges,
   },
-  // {
-  //   id: "project-4",
-  //   content:
-  //     "A web application built using React.js that visualizes and compares different sorting algorithms, such as insertion sort, merge sort, bubble sort, and quick sort. ",
-  //   name: "Sorting Algorithm Visualizer",
-  //   // title: "Languages and Tools",
-  //   img: sort,
-  // },
-  // {
-  //   id: "project-5",
-  //   content:
-  //     "A sudoku solver engine that solves a sudoku board using recursion and backtracking algorithms, coded in Python.",
-  //   name: "Sudoku Solver",
-  //   // title: "Languages and Tools",
-  //   img: sudoku,
-  // },
-  // {
-  //   id: "project-6",
-  //   content:
-  //     "This is my website! Check out the source code here. Built using React.js.",
-  //   name: "Personal Portfolio",
-  //   // title: "Languages and Tools",
-  //   img: portfolio,
-  // },
 ];
 
 export const socialMedia = [

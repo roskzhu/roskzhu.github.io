@@ -13,8 +13,8 @@ const Navbar = () => {
       {/* <img src={logoR} alt="icon" className="w-[80px] h-[80px] rounded-3xl" /> */}
       <h1 className="flex-1 highlight absolute font-poppins font-semibold ss:text-[50px] text-[24px]  
         text-white ss:leading-[50px] leading-[50px] z-[5] left-0 rounded-2xl"
-        style={{ left: '98px', top: '39px' }}>
-          .{' '} R {' '}.
+        style={{ left: '98px', top: '39px', paddingLeft: '5px', paddingRight: '5px'}}>
+          R
       </h1>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mt-5">
         {navLinks.map((nav, index) => (
@@ -51,7 +51,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-latinka font-medium cursor-pointer text-[18px] ${
+                className={`font-poppins font-semibold cursor-pointer text-[18px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}

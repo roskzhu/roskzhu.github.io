@@ -11,11 +11,13 @@ const Hero = () => (
     <div className={`flex-initial ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
       <div className="absolute z-[0] w-full h-full top-0 left-0">
         {/* background gradients */}
+        <Fade clear delay={500}>
         <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full white__gradient" style={{ left: '-584px', top: '564px' }}/>
         <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full blue__gradient" style={{ left: '184px', top: '64px' }}/>
         <div className="absolute z-[0] w-3/6 h-4/6 animate-spin-slow animate-pulse-slow rounded-full pink__gradient" style={{ left: '384px', top: '164px' }}/>
         <div className="absolute z-[0] w-3/6 h-4/6  animate-spin-slow animate-pulse-slow rounded-full purple__gradient" style={{ left: '-20vw' }}/>
         <div className="absolute z-[0] w-3/6 h-4/6 animate-spin-slow animate-pulse-slow rounded-full yellow__gradient" style={{ left: '-106px', top: '343px' }}/> 
+        </Fade>
       </div>
 
       <Fade clear delay={500}>

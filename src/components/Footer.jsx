@@ -3,9 +3,11 @@ import { donuticon } from "../assets";
 import { socialMedia } from "../constants";
 
 const Footer = () =>  (
-  <section className={`${styles.flexCenter} ${styles.paddingY} ml-8 mr-8  flex-col`}>
+  <section className={` ${styles.paddingY} ml-8 mr-8  flex-col`}>
     <div>
-      <h2 className={styles.heading2} style={{ paddingBottom: '180px'}}>
+      <h2 className={`${styles.flexLeft} font-poppins font-semibold italic text-[40px] leading-[64px] text-white my-1`}
+          style={{paddingBottom:"50px"}}>
+      {/* <h4 className="font-poppins font-semibold italic text-[40px] leading-[64px] text-white my-1" */}
       Let’s Build Something Impactful.
       </h2>
     </div>
@@ -20,7 +22,7 @@ const Footer = () =>  (
         </p>
       </div> */}
     {/* </div> */}
-    <div className="flex items-end flex-row md:mt-0 mt-6">
+    <div className={`${styles.flexRight} flex items-end flex-row md:mt-0 mt-6`}>
         {socialMedia.map((social, index) => (
           <img
             key={social.id}

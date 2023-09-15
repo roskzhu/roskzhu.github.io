@@ -1,23 +1,53 @@
 import styles from './style';
-
+import React, {useState, useEffect} from 'react';
 import { Navbar, Button, Footer, Projects, Hero } from './components';
-import { herobg } from './assets';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
+import Loader from "react-spinners/DotLoader";
 
-const App = () => (
-  <div className="bg-primary w-full overflow-hidden ">
+const App = () => {
+  const [loading, setLoading] = useState(true);
+  const [color, setColor] = useState("#6b7aff"); // loader colour
+
+  useEffect(() => {
+    // Simulate some loading process
+    setTimeout(() => {
+      setLoading(false); // Set loading to false when the loading process is complete
+    }, 4000); // Adjust the time as needed
+  }, []);
+
+  const override = {
+    display: "block",
+    margin: "0 auto",
+    borderColor: "red",
+  };
+
+  return (
+  <div className="App noise">
+    {loading ? (
+      <div className="sweet-loading">
+        <Loader
+          color={color}
+          loading={loading}
+          cssOverride={override}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+          </div>
+    ) : (
+      <>
     <div className="bg-cover bg-herobg w-full overflow-hidden noise">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
+          {/* fix** */}
           <Navbar style={{zIndex: 2}}/>
         </div>
       </div>
       <div className={`${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
-          {/* <div class="w-full h-full" style="background-image: url('https://thumbs.gfycat.com/AggravatingThoseArieltoucan-size_restricted.gif')"/> */}
-        </div>
+</div>
       </div>
     </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
@@ -28,9 +58,12 @@ const App = () => (
           <Footer />
         </div>
       </div>
-  </div>
+      </>
+            )}
+            </div>
   // </div>
   
-);
+  );
+};
 
 export default App;

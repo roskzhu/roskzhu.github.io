@@ -39,6 +39,10 @@
   background-color: yellow;
 }
 
+.outline-white {
+  border: 1px solid white; /* You can adjust the border size as needed */
+}
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -129,10 +133,10 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #0022ff 0.89%,
-    #1500ff 17.23%,
-    #4000ff 50%,
-    #301dff 85%
+    #001495 0.89%,
+    #0f00b1 17.23%,
+    #0018d0 50%,
+    #1500ff 85%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -302,14 +306,33 @@
 }
 
 .noise {
-  /* ... */
   background:
     /* linear-gradient(to right, blue, transparent), */
+    /* linear-gradient(to top, rgba(0, 0, 0, 0), transparent), */
+    linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(https://grainy-gradients.vercel.app/noise.svg);
-  opacity: 1;
+  /* opacity: 0.6; */
 }
 
 .highlight {
   background: linear-gradient(180deg, rgba(0, 68, 255, 0.5) 20%, rgb(0, 4, 255,0.55) 80%);  
   mix-blend-mode: multiply;
+}
+
+.App {
+  background:rgb(0, 0, 0);
+  overflow: hidden;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.sweet-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  width: 100%;
+  height: 100vh;
 }
