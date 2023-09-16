@@ -1,5 +1,5 @@
 import styles from './style';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Button, Footer, Projects, Hero } from './components';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
@@ -23,45 +23,53 @@ const App = () => {
   };
 
   return (
-  <div className="App noise">
-    {loading ? (
-      <div className="sweet-loading">
-        <Loader
-          color={color}
-          loading={loading}
-          cssOverride={override}
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-          </div>
-    ) : (
-      <>
-    <div className="bg-cover bg-herobg w-full overflow-hidden noise">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        {/* <div className={`${styles.boxWidth}`}> */}
-          <Navbar style={{zIndex: 2}}/>
-        {/* </div> */}
-      </div>
-      <div className={`${styles.flexCenter} `}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-</div>
-      </div>
-    </div>
-      <div className={`id="projects" bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
-        <div className={`${styles.boxWidth}`}>
-          <Projects />
-          {/* <AboutMe /> */}
-          {/* <ContactMe /> */}
-          <Footer />
+    <div className="App  bg-primary noise">
+      {loading ? (
+        <div className="sweet-loading">
+          <Loader
+            color={color}
+            loading={loading}
+            cssOverride={override}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </div>
-      </div>
-      </>
-            )}
+      ) : (
+        <>
+          <div className="bg-cover bg-herobg w-full overflow-hidden noise">
+            <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+              {/* <div className={`${styles.boxWidth}`}> */}
+              <Navbar />
+              {/* </div> */}
             </div>
-  // </div>
-  
+          </div>
+          <div id="home" className={`${styles.flexCenter} `}>
+            <div className={`${styles.boxWidth}`}>
+              <Hero />
+            </div>
+          </div>
+          <div id="about" className={` bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
+            <div className={`${styles.boxWidth}`}>
+              <AboutMe />
+            </div>
+          </div>
+          <div id="projects" className={` bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
+            <div className={`${styles.boxWidth}`}>
+              <Projects />
+              {/* <ContactMe /> */}
+            </div>
+          </div>
+          <div className={`bg-black ${styles.paddingX} ${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Footer />
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+    // </div>
+
   );
 };
 

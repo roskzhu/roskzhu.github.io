@@ -1,68 +1,41 @@
 import styles from "../style";
-import { logo } from "../assets";
+import { donuticon } from "../assets";
 import { socialMedia } from "../constants";
 
 const Footer = () =>  (
-  <section className={`${styles.flexCenter} ${styles.paddingY} ml-8 mr-8  flex-col`}>
-{/* <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}> */}
-      {/* <div className="flex-[1] flex flex-col justify-start mr-10">
-        <img
-          src={logo}
-          alt="h  oobank"
-          className="w-[266px] h-[72.14px] object-contain"
-        />
-        <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-          A new way to make the payments easy, reliable and secure.
-        </p>
-      </div> */}
-
-      {/* <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
-        {footerLinks.map((footerlink) => (
-          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
-            <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-              {footerlink.title}
-            </h4>
-            <ul className="list-none mt-4">
-              {footerlink.links.map((link, index) => (
-                <li
-                  key={link.name}
-                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
-                    index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
-                  }`}
-                >
-                  {link.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div> */}
-    {/* </div> */}
-
-    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-      <div className="flex-col">
-        <p className="font-poppins font-normal text-left text-[24px] leading-[27px] mt-5 text-white">
-          Rosanne Zhu
-        </p>
-        <p className="font-poppins font-normal text-left text-[18px] leading-[27px] mt-2 text-dimWhite">
-          <a href="rosannezhu@gmail.com">rosannezhu@gmail.com</a>          
-        </p>
-      </div>
-
-      <div className="flex items-end flex-row md:mt-0 mt-6">
-        {socialMedia.map((social, index) => (
-          <img
-            key={social.id}
-            src={social.icon}
-            alt={social.id}
-            className={`w-[30px] h-[30px] object-contain cursor-pointer ${
-              index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-            }`}
-            onClick={() => window.open(social.link)}
-          />
-        ))}
-      </div>
+  <section className={` ${styles.paddingY} ml-8 mr-8 -mt-8 -mb-4 flex-col w-full`}>
+    <div>
+      <h2 className={`${styles.flexLeft} font-poppins italic font-regular cursor-pointer text-[20px] leading-[34px] text-white my-1`}
+          // style={{paddingBottom:"50px"}}
+          >
+      {/* <h4 className="font-poppins font-semibold italic text-[40px] leading-[64px] text-white my-1" */}
+      LET'S BUILD SOMETHING IMPACTFUL.
+      </h2>
     </div>
+
+    <div className={`${styles.flexRight} flex items-end justify-between flex-row md:mt-0 mt-6 w-full`}
+    >
+      <p> 
+      <span className="font-poppins font-normal text-left text-[13px] leading-[27px] mt-2 text-dimWhite">
+            Resume is available upon request. <br/>
+          </span> 
+            <span className="font-poppins font-normal text-left text-[13px] leading-[22px] mt-2 text-dimWhite" 
+            style={{ textDecoration: "underline" }}>
+        <a href="mailto:rosannezhu@gmail.com">Email</a> <br/>
+        <a href="https://www.linkedin.com/in/rosanne-zhu" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a> <br/>
+        <a href="https://github.com/roskzhu" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        </span> 
+      </p>
+      <p className="font-poppins font-regular place-self-end	text-right text-[18px] leading-[20px] mt-5 text-dimWhite "
+        >
+          <span className="italic">
+            Built by {" "}
+        <span className="font-poppins font-semibold place-self-end text-gradient italic">Rosanne.</span></span></p>
+      </div>
   </section>
 )
 

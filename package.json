@@ -10,9 +10,16 @@
   },
   "dependencies": {
     "@next/font": "^13.1.1",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^6.16.0",
+    "react-scroll": "^1.8.9",
+    "react-spinners": "^0.13.8",
+    "react-typewriter-effect": "^1.1.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

@@ -1,4 +1,5 @@
-import { icon, linkedin, github, transicon, ispy, fridges, cxc, sudoku, portfolio, sort  } from "../assets";
+import { icon, linkedin, github, transicon, ispy, fridges, tetris, } from "../assets";
+import { BrowserRouter } from "react-router-dom";
 
 export const navLinks = [
   {
@@ -27,7 +28,7 @@ export const project = [
     name: "iSpy",
     content:
       "Facial recognition web application.",
-    title: "Python // OpenCV // Tensorflow // Javascript",
+    title: "Python,  OpenCV, Tensorflow, Javascript",
     img: ispy,
   },
   {
@@ -36,15 +37,15 @@ export const project = [
       "Tetris variation, expanded for 2-player competition.",
     name: "Tetris",
     title: "C++",
-    img: ispy,
+    img: tetris,
   },
   {
     id: "project-2",
     content:
-      "Full-stack recipe making AI.",
+      "Full-stack fridge scanner and recipe making AI.",
     name: "Fridge Smart",
-    title: "Javascript // YOLOv8",
-    img: ispy,
+    title: "Javascript, YOLOv8",
+    img: fridges,
   },
 ];
 
@@ -64,18 +65,18 @@ export const socialMedia = [
 export const projects = [
   {
     id: "client-1",
-    mylogo: transicon,
+    donuticon: transicon,
   },
   {
     id: "client-2",
-    mylogo: transicon,
+    donuticon: transicon,
   },
   {
     id: "client-3",
-    mylogo: transicon,
+    donuticon: transicon,
   },
   {
     id: "client-4",
-    mylogo: transicon,
+    donuticon: transicon,
   },
 ];
