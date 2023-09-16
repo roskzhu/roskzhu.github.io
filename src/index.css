@@ -382,3 +382,12 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  justify-content: space-between;
+  padding-right: 70px;
+}

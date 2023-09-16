@@ -2,8 +2,8 @@ import React from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const ProjectCard = ({ content, name, title, img }) => (
-  <div className="flex justify-between flex-col px-10 py-12 rounded-[10px] w-[280px] h-[360px]
+const ProjectCard = ({ content, name, title, img, link }) => (
+  <a href={link} target="_blank" rel="noopener noreferrer" className="flex justify-between flex-col px-10 py-12 rounded-[10px] w-[280px] h-[360px]
   md:mr-10 sm:mr-5 mr-0 my-5 project-card "
       data-aos="fade-up"
       data-aos-delay="100"
@@ -31,7 +31,7 @@ const ProjectCard = ({ content, name, title, img }) => (
         {title}
       </p>
       </div>
-    </div>
+    </a>
 
 );
 

@@ -9,13 +9,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-end items-center navbar">    
+    <nav className="w-full flex py-6 items-center navbar">    
       {/* upper left icon */}
       {/* <img src={logoR} alt="icon" className="w-[80px] h-[80px] rounded-3xl" /> */}
       {/* <div className="flex items-center ml-25"> */}
       <Fade>
       <h1 className="flex-1 justify-start stroke absolute font-poppins font-semibold ss:text-[28px] text-[24px]  
-        text-dimWhite ss:leading-[50px] leading-[150px] z-[5] left-20 rounded-2xl mt-5"
+        text-dimWhite ss:leading-[50px] leading-[150px] z-[5] rounded-2xl mt-5 left-20"
         >
           Rosanne.
       </h1>

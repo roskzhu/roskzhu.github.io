@@ -2,8 +2,7 @@ import styles from './style';
 import React, { useState, useEffect } from 'react';
 import { Navbar, Button, Footer, Projects, Hero } from './components';
 import AboutMe from './components/AboutMe';
-import ContactMe from './components/ContactMe';
-import Loader from "react-spinners/DotLoader";
+import Loader from "react-spinners/RingLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -39,12 +38,12 @@ const App = () => {
         <>
           <div className="bg-cover bg-herobg w-full overflow-hidden noise">
             <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-              {/* <div className={`${styles.boxWidth}`}> */}
-              <Navbar />
-              {/* </div> */}
+              <div className={`${styles.boxWidth}`}>
+              <Navbar position="fixed" sticky="top" />
+              </div>
             </div>
           </div>
-          <div id="home" className={`${styles.flexCenter} `}>
+          <div id="home" className={`${styles.flexCenter} noise`}>
             <div className={`${styles.boxWidth}`}>
               <Hero />
             </div>

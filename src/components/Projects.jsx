@@ -30,7 +30,7 @@ const Projects = () => {
           >
             <span className="text-highlight rounded-xl"
       style={{paddingLeft: '3px', paddingRight: '8px'}}>
-            Software Creations 
+            Software Projects
       </span>
           </span>
         </h1>

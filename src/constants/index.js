@@ -1,11 +1,14 @@
 import { icon, linkedin, github, transicon, ispy, fridges, tetris, } from "../assets";
-import { BrowserRouter } from "react-router-dom";
 
 export const navLinks = [
   {
     id: "home",
     title: "HOME",
   },
+  {
+    id: "about",
+    title: "ABOUT",
+  },  
   {
     id: "projects",
     title: "MY WORK",
@@ -30,6 +33,7 @@ export const project = [
       "Facial recognition web application.",
     title: "Python,  OpenCV, Tensorflow, Javascript",
     img: ispy,
+    link: "https://github.com/roskzhu/iSpy",
   },
   {
     id: "project-3",
@@ -38,6 +42,7 @@ export const project = [
     name: "Tetris",
     title: "C++",
     img: tetris,
+    link: "https://github.com/roskzhu/Biquadris",
   },
   {
     id: "project-2",
@@ -46,6 +51,7 @@ export const project = [
     name: "Fridge Smart",
     title: "Javascript, YOLOv8",
     img: fridges,
+    link: "https://github.com/roskzhu/FridgeSmart",
   },
 ];
 

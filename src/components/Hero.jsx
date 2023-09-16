@@ -8,9 +8,8 @@ import Fade from 'react-reveal/Fade';
 
 const Hero = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-    <div className={`flex-initial ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
-      <div className="absolute z-[0] w-full h-full top-0 left-0">
-        {/* background gradients */}
+    <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
+      <div className="absolute z-[0] w-full h-[100%] top-15 left-0">
         <Fade clear delay={500}>
         <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full white__gradient" style={{ left: '-584px', top: '564px' }}/>
         <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full blue__gradient" style={{ left: '184px', top: '64px' }}/>
@@ -24,13 +23,10 @@ const Hero = () => (
         <h1 className={`${styles.cover} text-white italic ss:leading-[80px] 
         leading-[64px] w-full text-white text-left z-[4] left-50 ml-20`}
         style={{ marginLeft: '200px'
-        , paddingTop: '50px'
+        , paddingTop: '120px'
       }}
         >
           <span className="text-gradient">Hi, I'm {' '}Rosanne. </span>
-          {/* <span className="text-gradient highlight text rounded-3xl">
-          Rosanne
-          </span> */}
         </h1>
       </Fade>
 
@@ -66,18 +62,6 @@ const Hero = () => (
           />
       </p>
 
-    {/* images on right side of the page */}
-    {/* <div className={`flex-initial flex relative md:my-0 my-10 z-[1] w-full xl:w-1/2 xl:absolute right-20`}>
-      <div style={{ width: '80%', height: '100%', position: 'relative',  marginLeft: 'auto' }}>
-        <Fade clear delay={500}>
-          <img
-            src={donut}
-            alt="Donut Image"
-            class="float-right"
-          />
-        </Fade>
-      </div>
-    </div> */}
   </div>
 
       {/* say hi button for mobile devices */}
