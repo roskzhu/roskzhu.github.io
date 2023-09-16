@@ -14,11 +14,11 @@ const Navbar = () => {
       {/* <img src={logoR} alt="icon" className="w-[80px] h-[80px] rounded-3xl" /> */}
       {/* <div className="flex items-center ml-25"> */}
       <Fade>
-      <h1 className="flex-1 justify-start stroke absolute font-poppins font-semibold ss:text-[28px] text-[24px]  
-        text-dimWhite ss:leading-[50px] leading-[150px] z-[5] rounded-2xl mt-5 left-20"
-        >
-          Rosanne.
-      </h1>
+        <h1 className="flex-1 justify-start stroke absolute font-poppins font-semibold ss:text-[28px] text-[24px]  
+          text-dimWhite ss:leading-[50px] leading-[150px] z-[5] rounded-2xl mt-5 left-20"
+          >
+            Rosanne.
+        </h1>
       </Fade>
       <Fade>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mt-5">
