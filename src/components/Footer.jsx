@@ -30,7 +30,8 @@ const Footer = () =>  (
         </a>
         </span> 
       </p>
-      <p className="font-poppins font-regular place-self-end	text-right text-[18px] leading-[20px] mt-5 text-dimWhite "
+      <p className="font-poppins font-regular place-self-end	text-right text-[18px] 
+                    leading-[20px] mt-5 text-dimWhite "
         >
           <span className="italic">
             Built by {" "}

@@ -36,7 +36,7 @@ export const project = [
     link: "https://github.com/roskzhu/iSpy",
   },
   {
-    id: "project-3",
+    id: "project-2",
     content:
       "Tetris variation, expanded for 2-player competition.",
     name: "Tetris",
@@ -45,7 +45,7 @@ export const project = [
     link: "https://github.com/roskzhu/Biquadris",
   },
   {
-    id: "project-2",
+    id: "project-3",
     content:
       "Full-stack fridge scanner and recipe making AI.",
     name: "Fridge Smart",

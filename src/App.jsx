@@ -6,7 +6,7 @@ import Loader from "react-spinners/RingLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [color, setColor] = useState("#6b7aff"); // loader colour
+  const [color, setColor] = useState("#6bcbff"); // loader colour
 
   useEffect(() => {
     // Simulate some loading process
@@ -22,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div className="App  bg-primary noise">
+    <div className="App bg-primary noise">
       {loading ? (
         <div className="sweet-loading">
           <Loader

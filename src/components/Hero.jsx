@@ -15,13 +15,13 @@ const Hero = () => (
         <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full blue__gradient" style={{ left: '184px', top: '64px' }}/>
         <div className="absolute z-[0] w-3/6 h-4/6 animate-spin-slow animate-pulse-slow rounded-full pink__gradient" style={{ left: '384px', top: '164px' }}/>
         <div className="absolute z-[0] w-3/6 h-4/6  animate-spin-slow animate-pulse-slow rounded-full purple__gradient" style={{ left: '-20vw' }}/>
-        <div className="absolute z-[0] w-3/6 h-4/6 animate-spin-slow animate-pulse-slow rounded-full yellow__gradient" style={{ left: '-106px', top: '343px' }}/> 
+        <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full yellow__gradient" style={{ left: '-106px', top: '343px' }}/> 
         </Fade>
       </div>
 
       <Fade clear delay={500}>
-        <h1 className={`${styles.cover} text-white italic ss:leading-[80px] 
-        leading-[64px] w-full text-white text-left z-[4] left-50 ml-20`}
+        <h1 className={`${styles.cover} italic ss:leading-[80px] 
+        leading-[64px] w-full text-left z-[4] left-50 ml-20`}
         style={{ marginLeft: '200px'
         , paddingTop: '120px'
       }}
@@ -44,7 +44,7 @@ const Hero = () => (
         </p>
       </Fade>
 
-      <p className={`${styles.bigText} text-left mt-5 z-[4] w-full`}
+      <div className={`${styles.bigText} text-left mt-5 z-[4] w-full`}
           style={{ marginLeft: '200px', paddingBottom: '200px'}}
           >
           <Typewriter 
@@ -60,7 +60,7 @@ const Hero = () => (
                 .start();
             }}
           />
-      </p>
+      </div>
 
   </div>
 
