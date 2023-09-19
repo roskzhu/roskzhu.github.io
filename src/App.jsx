@@ -1,43 +1,75 @@
 import styles from './style';
-
+import React, { useState, useEffect } from 'react';
 import { Navbar, Button, Footer, Projects, Hero } from './components';
-import { herobg } from './assets';
 import AboutMe from './components/AboutMe';
-import ContactMe from './components/ContactMe';
+import Loader from "react-spinners/RingLoader";
 
-const App = () => (
-  <div className="bg-primary w-full overflow-hidden ">
-    <div className="bg-cover bg-herobg w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar />
-        </div>
-      </div>
+const App = () => {
+  const [loading, setLoading] = useState(true);
+  const [color, setColor] = useState("#6bcbff"); // loader colour
 
-      {/* <div className="bg-[url('./assets/terrain2.gif')] w-full bg-cover bg-center"> */}
-      {/* <div className="bg-[url('https://as1.ftcdn.net/v2/jpg/01/68/75/60/1000_F_168756060_ipLDpsVxX2DZpsYH9uOA0gngXRiQn6DM.jpg')] w-full bg-cover bg-center"> */}
-      <div className={`${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-          {/* <div class="w-full h-full" style="background-image: url('https://thumbs.gfycat.com/AggravatingThoseArieltoucan-size_restricted.gif')"/> */}
+  useEffect(() => {
+    // Simulate some loading process
+    setTimeout(() => {
+      setLoading(false); // Set loading to false when the loading process is complete
+    }, 4000); // Adjust the time as needed
+  }, []);
+
+  const override = {
+    display: "block",
+    margin: "0 auto",
+    borderColor: "red",
+  };
+
+  return (
+    <div className="App bg-primary noise">
+      {loading ? (
+        <div className="sweet-loading">
+          <Loader
+            color={color}
+            loading={loading}
+            cssOverride={override}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </div>
-      </div>
+      ) : (
+        <>
+          <div className="bg-cover bg-herobg w-full overflow-hidden noise">
+            <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+              <div className={`${styles.boxWidth}`}>
+              <Navbar position="fixed" sticky="top" />
+              </div>
+            </div>
+          </div>
+          <div id="home" className={`${styles.flexCenter} noise`}>
+            <div className={`${styles.boxWidth}`}>
+              <Hero />
+            </div>
+          </div>
+          <div id="about" className={` bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
+            <div className={`${styles.boxWidth}`}>
+              <AboutMe />
+            </div>
+          </div>
+          <div id="projects" className={` bg-primary ${styles.paddingX} ${styles.flexStart} noise`}>
+            <div className={`${styles.boxWidth}`}>
+              <Projects />
+              {/* <ContactMe /> */}
+            </div>
+          </div>
+          <div className={`bg-black ${styles.paddingX} ${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Footer />
+            </div>
+          </div>
+        </>
+      )}
     </div>
+    // </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-            {/* background */}
-            {/* <div className="top-0 left-0 absolute z-[0]"> */}
-            {/* <img src={herobg} alt="herobg" className="top-0 left-0 absolute w-full h-screen object-cover z-[0]" /> */}
-          {/* </div> */}
-        <div className={`${styles.boxWidth}`}>
-          <Projects />
-          <AboutMe />
-          <ContactMe />
-          <Footer />
-        </div>
-      </div>
-  </div>
-  
-);
+  );
+};
 
 export default App;

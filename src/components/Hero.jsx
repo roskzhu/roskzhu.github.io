@@ -1,96 +1,68 @@
 import styles from '../style';
-import { herobg, icon, cropicon, transicon, terrain } from '../assets';
+import { donut } from '../assets';
 import SayHi from './SayHi';
 import Button from './Button';
+import Typewriter from 'typewriter-effect';
+import Fade from 'react-reveal/Fade';
+
 
 const Hero = () => (
-  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`} 
-              // style={{ backgroundImage: {herobg}, 
-              // backgroundSize: "cover" }}
-              >
-          {/* <img src={herobg} alt="herobg" className="top-0 left-0 absolute w-full h-screen object-cover z-[0]" /> */}
-          <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
-
-
-    {/* <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 rounded-full white__gradient" /> */}
-
-      <div className="object-center">
-
-        {/* <div class="bg-cover bg-center relative z-[5] style=herobg"></div> */}
-        {/* icon & purple center gradient */}
-        <div className="absolute z-[1] w-[450px] h-[450px] rounded-full purple__gradient" />
-
-        <img src={icon} alt="icon" className="w-[400px] h-[400px] relative z-[4]" />
+  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
+      <div className="absolute z-[0] w-full h-[100%] top-15 left-0">
+        <Fade clear delay={500}>
+        <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full white__gradient" style={{ left: '-584px', top: '564px' }}/>
+        <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full blue__gradient" style={{ left: '184px', top: '64px' }}/>
+        <div className="absolute z-[0] w-3/6 h-4/6 animate-spin-slow animate-pulse-slow rounded-full pink__gradient" style={{ left: '384px', top: '164px' }}/>
+        <div className="absolute z-[0] w-3/6 h-4/6  animate-spin-slow animate-pulse-slow rounded-full purple__gradient" style={{ left: '-20vw' }}/>
+        <div className="absolute z-[0] w-3/6 h-3/6 animate-spin-slow animate-pulse-slow rounded-full yellow__gradient" style={{ left: '-106px', top: '343px' }}/> 
+        </Fade>
       </div>
 
-      {/* images on right side of the page */}
-      {/* <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}> */}
-        {/* <img src={cropicon} alt="cropicon" className="w-[100%] h-[50%] relative z-[5]" /> */}
-
-        {/* gradient start */}
-        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
-        {/* gradient end */}
-      {/* </div> */}
-
-      {/* title */}
-      <div classname="flex flex-row justify-between items-center w-full z-[5]">
-        <h1 className="flex-1 font-universo font-semibold ss:text-[62px] text-[40px] text-white ss:leading-[100px] leading-[74px] z-[5]">
-          Hi, {" "} 
-          {/* the line below adds a new line */}
-          {/* <br className="sm:block hidden" /> {" "} */}
-          <span className="text-gradient" id="gradient-header1">
-            I'm Rosanne.
-          </span>
+      <Fade clear delay={500}>
+        <h1 className={`${styles.cover} italic ss:leading-[80px] 
+        leading-[64px] w-full text-left z-[4] left-50 ml-20`}
+        style={{ marginLeft: '200px'
+        , paddingTop: '120px'
+      }}
+        >
+          <span className="text-gradient">Hi, I'm {' '}Rosanne. </span>
         </h1>
+      </Fade>
 
-      {/* about me section */}
-      <p className={`${styles.paragraph} text-center justify-center mt-5`}>
-      A CS student @ the University of Waterloo. 
-      </p>
-      <p className={`${styles.paragraph} text-center justify-center`}>
-      Here’s some of my work.
-      </p>
-      <br className="sm:block hidden" /> {" "}
-      <br className="sm:block hidden" /> {" "}
+      <Fade clear delay={1500}>
+        <p className={`${styles.heading2} text-left mt-5 z-[4] text left-20`}
+            style={{ marginLeft: '200px'
+            // , paddingBottom: '30px'
+          }}
+          >            
+              I'm a {' '}
+              <span className="stroke">
+              software engineer  {' '}
+              </span>
+               developing <br/>innovative solutions for  complex problems.      
+        </p>
+      </Fade>
 
-      {/* arrow button */}
-      <div className="ss:flex hidden justify-center md:mr-4 mr-0">
-          <a href="mailto:rkzhu@uwaterloo.ca">
-            <button>
-              <Button />
-            </button>
-          </a>
-        </div>
-
-      <br className="sm:block hidden" /> {" "}
-      {/* <br className="sm:block hidden" /> {" "} */}
-
-
-      {/* linkedin and github */}
-      <div className="ss:flex hidden md:mr-4 mr-0">
-          {/* <a href="https://www.linkedin.com/in/rosanne-zhu-17bbaa1b5/">
-            <button>
-              <img src={linkedin} alt="linkedin" className="w-[30px] h-[30px] object-contain ml-2"/>
-            </button>
-          </a>
-          <a href="https://github.com/me50/roskzhu">
-            <button>
-              <img src={github} alt="github" className="w-[30px] h-[30px] object-contain ml-6"/>
-            </button>
-          </a> */}
-          {/* <a href="mailto:rkzhu@uwaterloo.ca">
-            <button>
-              <img src={email} alt="email" className="w-[30px] h-[30px] object-contain ml-6"/>
-            </button>
-          </a> */}
-        </div>
+      <div className={`${styles.bigText} text-left mt-5 z-[4] w-full`}
+          style={{ marginLeft: '200px', paddingBottom: '200px'}}
+          >
+          <Typewriter 
+            onInit={(typewriter) => {
+              typewriter.typeString('Scroll down to see some of my work.')
+                .callFunction(() => {
+                  console.log('String typed out!');
+                })
+                .pauseFor(10000)
+                .callFunction(() => {
+                  console.log('All strings were deleted');
+                })
+                .start();
+            }}
+          />
       </div>
-      
-    </div>
 
-
+  </div>
 
       {/* say hi button for mobile devices */}
       <div className={`ss:hidden ${styles.flexCenter}`}>

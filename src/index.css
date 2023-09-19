@@ -20,8 +20,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #ff4e50, #000000, #ff4e50);
+  background-size: 200% 100%;
+  animation: gradientAnimation 5s animate-spin infinite;
+}
+
 #gradient-header1 {
   background-color: yellow;
+}
+
+.outline-white {
+  border: 1px solid white; /* You can adjust the border size as needed */
 }
 
 :root {
@@ -54,10 +73,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(260, 92%, 12%);
 }
-
-
-
-
 
 .scroll-down {
   height: 50px;
@@ -106,25 +121,58 @@
   }
 }
 
-
-
-
-
-
+.text {
+  animation: 
+    typing 2s steps(18) infinite,
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {border-color: transparent}
+}
 
 .text-gradient {
-  background: radial-gradient(
+  background: 
+  /* radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #511BE8 0.89%,
-    #7167E4 17.23%,
-    #8C6CED 50%,
-    #762EF3 85%
+    #001495 0.89%,
+    #0f00b1 17.23%,
+    #0018d0 50%,
+    #1500ff 85%
+  ); */
+  linear-gradient(
+    37.81deg,
+    #a4a6f7 12.19%,
+    #9879e0 29.82%,
+    #e366b1 51.94%,
+    #e4ad80 90.29%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
   color:Tomato;
+  animation: 
+    typing 2s steps(18) infinite,
+    cursor .4s step-end infinite alternate;
+}
+
+.text-neon {
+  background: #4291ff;
+  /* linear-gradient(
+    37.81deg,
+    #a4a6f7 12.19%,
+    #9879e0 29.82%,
+    #6681e3 51.94%,
+    #80bfe4 90.29%
+  ); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  color:Tomato;
+  animation: 
+    typing 2s steps(18) infinite,
+    cursor .4s step-end infinite alternate;
 }
 
 .small-text-gradient {
@@ -226,7 +274,7 @@
 
 .about-card:hover {
   /* background: var(--black-gradient); */
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #7c7a9c45 100%);
+  /* background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #7c7a9c45 100%); */
   box-shadow: var(--card-shadow);
   /* border-color: dimgray; */
 }
@@ -237,31 +285,111 @@
 
 .project-card {
   background:
-   /* #7c7a9c4c; */
-  linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #7c7a9c4f 100%);
+   #4f4f4f31;
+  /* linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #7c7a9c4f 100%); */
 }
 
 .project-card:hover {
   /* background: var(--black-gradient); */
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #7c7a9c6e 100%);
+  background: #4f4f4f5a;
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
-  filter: blur(123px);
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #1437b581 100%);
+  /* background: rgba(3, 45, 255, 0); */
+  mix-blend-mode: multiply;
+  filter: blur(100px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-  filter: blur(900px);
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #c24aa872 100%);
+  mix-blend-mode: multiply;
+  filter: blur(100px);
 }
 
 .white__gradient {
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+  background: rgba(255, 255, 255, 0.375);
+  mix-blend-mode: multiply;
+  filter: blur(200px);
 }
 
 .purple__gradient {
-  background: rgba(98, 0, 255, 0.6);
-  filter: blur(750px);
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #4a21a381 100%);
+  /* background: rgba(98, 0, 255, 0.6); */
+  /* filter: blur(190px); */
+  /* background: rgba(83, 35, 159, 0.43); */
+  mix-blend-mode: multiply;
+  filter: blur(70px);
+}
+
+.yellow__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #fead6147 100%);  
+  mix-blend-mode: multiply;
+  filter: blur(100px);
+}
+
+.noise {
+  background:
+    /* linear-gradient(to right, blue, transparent), */
+    linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    /* url(https://grainy-gradients.vercel.app/noise.svg); */
+    url(/assets/nnnoise.svg);
+}
+
+.text-highlight {
+  background: 
+    /* linear-gradient(180deg, rgba(0, 68, 255, 0.248) 20%, rgba(0, 4, 255, 0.356) 80%);   */
+    #0051ff76;  
+  mix-blend-mode: multiply;
+}
+
+.App {
+  background:rgb(0, 0, 0);
+  overflow: hidden;
+  width: 100%;
+}
+
+.sweet-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    /* url(https://grainy-gradients.vercel.app/noise.svg) */
+    ;
+  width: 100%;
+  height: 100vh;
+}
+
+.a{
+  box-shadow: 0 0 5px cyan,
+  0 0 25 px cyan;
+}
+
+.a:hover {
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan, 0 0 50px cyan,
+  0 0 100px cyan, 0 0 200px cyan;
+}
+
+.nav-link-hover:hover {
+  color: #007bff; /* Change to your desired hover color */
+  text-decoration: underline; /* Add underline on hover */
+  /* You can add other styles like background color, padding, etc. */
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.stroke{
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  justify-content: space-between;
+  padding-right: 70px;
 }
